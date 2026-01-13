@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "vite", // or your dev server
+    "build": "vite build",
+    "start": "vite preview" // or your production server
+  }
+}
