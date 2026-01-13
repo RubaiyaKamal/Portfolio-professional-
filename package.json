@@ -1,7 +1,9 @@
-{
-  "scripts": {
-    "dev": "vite", // or your dev server
-    "build": "vite build",
-    "start": "vite preview" // or your production server
-  }
-}
+ { 
+   "name": "portfolio-professional",                                                                                                                                                               
+   "version": "1.0.0",
+   "description": "Professional portfolio website",
+   "scripts": {
+     "build": "echo 'No build needed - static site'",
+     "start": "python -m http.server 8080"
+   }
+ }
