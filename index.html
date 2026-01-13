@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rubaiya Kamal - Agentic AI Engineer & Cloud Architect specializing in Multi-Agent Systems, AWS, and Event-Driven Architecture">
+    <title>Rubaiya Kamal | Agentic AI Engineer & Cloud Architect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Custom animations and modern effects */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+      }
+
+      @keyframes gridMove {
+        0% { transform: rotateX(60deg) rotateZ(-45deg) translateZ(-100px) translateY(0); }
+        100% { transform: rotateX(60deg) rotateZ(-45deg) translateZ(-100px) translateY(-50px); }
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+
+      @keyframes slideUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes borderAnimation {
+        0% { filter: hue-rotate(0deg); }
+        100% { filter: hue-rotate(360deg); }
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: rotate(-45deg) translateY(0); }
+        40% { transform: rotate(-45deg) translateY(-10px); }
+        60% { transform: rotate(-45deg) translateY(-5px); }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">RK</span>
+                <span class="verification-badge" title="Verified Professional">✓</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Rubaiya Kamal</span>
+                    <span class="title-verified">
+                        <svg class="verified-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">Agentic AI Engineer & Cloud Architect</p>
+                <p class="hero-description">
+                    Building next-generation enterprise solutions with Multi-Agent Systems,
+                    AWS Serverless, and Event-Driven Architecture
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="card-3d">
+                    <div class="card-face card-front">
+                        <div class="tech-stack-visual">
+                            <div class="tech-item" style="--delay: 0s">AI</div>
+                            <div class="tech-item" style="--delay: 0.1s">Cloud</div>
+                            <div class="tech-item" style="--delay: 0.2s">Agents</div>
+                            <div class="tech-item" style="--delay: 0.3s">AWS</div>
+                            <div class="tech-item" style="--delay: 0.4s">K8s</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I specialize in architecting and implementing cutting-edge AI-powered enterprise solutions
+                        that leverage multi-agent systems and cloud-native technologies.
+                    </p>
+                    <p>
+                        With expertise in building scalable, event-driven architectures on AWS and Kubernetes,
+                        I create intelligent systems that transform how businesses operate in the age of AI.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime SLA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="profile.jpg" alt="Rubaiya Kamal - Agentic AI Engineer" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Core Expertise</h2>
+            </div>
+
+            <div class="expertise-grid">
+                <!-- Agentic AI -->
+                <div class="expertise-card" data-card="1">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Agentic AI Engineering</h3>
+                        <p class="card-description">
+                            Design and implement multi-agent systems using AgentKit and MCP frameworks.
+                            Build autonomous AI agents that collaborate to solve complex enterprise problems.
+                        </p>
+                        <ul class="card-features">
+                            <li>Multi-Agent Orchestration</li>
+                            <li>AgentKit & MCP Integration</li>
+                            <li>Autonomous Decision Systems</li>
+                            <li>AI-Driven Workflows</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cloud Architecture -->
+                <div class="expertise-card" data-card="2">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">AWS Cloud Architecture</h3>
+                        <p class="card-description">
+                            Architect serverless and containerized solutions on AWS. Design scalable,
+                            cost-effective infrastructure using Lambda, ECS, and Kubernetes.
+                        </p>
+                        <ul class="card-features">
+                            <li>AWS Serverless (Lambda, API Gateway)</li>
+                            <li>Container Orchestration (EKS, ECS)</li>
+                            <li>Infrastructure as Code (Terraform, CDK)</li>
+                            <li>Cost Optimization Strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Event-Driven Architecture -->
+                <div class="expertise-card" data-card="3">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Event-Driven Architecture</h3>
+                        <p class="card-description">
+                            Build resilient, scalable systems using event-driven patterns. Implement
+                            message queues, event streaming, and real-time data processing.
+                        </p>
+                        <ul class="card-features">
+                            <li>Event Sourcing & CQRS</li>
+                            <li>Apache Kafka & AWS EventBridge</li>
+                            <li>Real-time Stream Processing</li>
+                            <li>Microservices Communication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kubernetes -->
+                <div class="expertise-card" data-card="4">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Kubernetes & DevOps</h3>
+                        <p class="card-description">
+                            Deploy and manage containerized applications at scale. Implement CI/CD pipelines
+                            and GitOps workflows for automated deployments.
+                        </p>
+                        <ul class="card-features">
+                            <li>K8s Cluster Management</li>
+                            <li>Helm Charts & Operators</li>
+                            <li>GitOps with ArgoCD/Flux</li>
+                            <li>Observability & Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- LeadFlow AI - Sales Lead Management -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#gradient1)"/>
+                                <circle cx="200" cy="150" r="60" stroke="white" stroke-width="2" opacity="0.5"/>
+                                <circle cx="200" cy="150" r="40" stroke="white" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0" y1="0" x2="400" y2="300">
+                                        <stop offset="0%" stop-color="#1e40af"/>
+                                        <stop offset="100%" stop-color="#0f172a"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="project-tag">AI CRM</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">LeadFlow AI - Sales Lead Management</h3>
+                        <p class="project-description">
+                            Intelligent CRM system that automatically qualifies leads using AI. Solves the time-consuming
+                            manual process of lead qualification by engaging prospects with an AI chatbot and scoring
+                            them based on budget, authority, need, and timeline (BANT methodology).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Anthropic Claude</span>
+                            <span class="tech-badge">AWS Lambda</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">TailwindCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=H8PkLxk-ERI" target="_blank" class="project-link">
+                                <span>View Details</span>
+                                <svg viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physical AI & Humanoid Robotics Book -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#gradient2)"/>
+                                <path d="M200 100L240 150L200 200L160 150Z" stroke="white" stroke-width="2"/>
+                                <circle cx="200" cy="100" r="10" fill="white"/>
+                                <circle cx="240" cy="150" r="10" fill="white"/>
+                                <circle cx="200" cy="200" r="10" fill="white"/>
+                                <circle cx="160" cy="150" r="10" fill="white"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0" y1="0" x2="400" y2="300">
+                                        <stop offset="0%" stop-color="#334155"/>
+                                        <stop offset="100%" stop-color="#0f172a"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="project-tag">AI Education</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Physical AI & Humanoid Robotics</h3>
+                        <p class="project-description">
+                            Book exploring embodied intelligence - bridging the gap between digital AI and physical robotics.
+                            Leverages cutting-edge AI tools to create an interactive learning platform for students and practitioners.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">SpecKit</span>
+                            <span class="tech-badge">Claude Code</span>
+                            <span class="tech-badge">OpenAI Agents SDK</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">Qdrant</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=fVzt8OQParA" target="_blank" class="project-link">
+                                <span>View Details</span>
+                                <svg viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Todo AI Chatbot with MCP + OpenAI Agents SDK -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#gradient3)"/>
+                                <path d="M100 150h80l40 50 40-100 40 50h80" stroke="white" stroke-width="2" fill="none"/>
+                                <defs>
+                                    <linearGradient id="gradient3" x1="0" y1="0" x2="400" y2="300">
+                                        <stop offset="0%" stop-color="#1e293b"/>
+                                        <stop offset="100%" stop-color="#0f172a"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="project-tag">AI Chatbot</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Todo AI Chatbot with MCP + OpenAI Agents SDK</h3>
+                        <p class="project-description">
+                            AI-powered Todo Chatbot that lets users manage tasks using natural language and voice commands.
+                            Built with a modern, scalable, stateless architecture using MCP and OpenAI Agents SDK.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">OpenAI ChatKit</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">OpenAI Agents SDK</span>
+                            <span class="tech-badge">MCP SDK</span>
+                            <span class="tech-badge">SQLModel</span>
+                            <span class="tech-badge">Better Auth</span>
+                            <span class="tech-badge">Neon DB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=GTB907x3-MU&t=2s" target="_blank" class="project-link">
+                                <span>View Details</span>
+                                <svg viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                    </div>
+                    <p class="contact-description">
+                        I'm always interested in hearing about new projects and opportunities.
+                        Whether you need help with AI systems, cloud architecture, or event-driven solutions,
+                        let's discuss how we can work together.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:rubaiya.kamal@example.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">Email</div>
+                                <div class="method-value">rubaiyakamal0@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/rubaiyakamal" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">LinkedIn</div>
+                                <div class="method-value">https://www.linkedin.com/in/rubaiya-kamal-0a69622ba/</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/rubaiyakamal" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">GitHub</div>
+                                <div class="method-value">https://github.com/RubaiyaKamal</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">RK</span>
+                        <span class="verification-badge">✓</span>
+                    </div>
+                    <p class="footer-tagline">Building the future with AI and Cloud</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#expertise">Expertise</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://linkedin.com/in/rubaiyakamal" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/rubaiyakamal" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:rubaiya.kamal@example.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rubaiya Kamal. All rights reserved.</p>
+                <p class="footer-note">Built with modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
